@@ -1,11 +1,14 @@
+import Hero from "@/components/Hero";
 import { heroContent } from "@/constants";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 border-0 rounded-lg">
+    <div className="">
+      <Hero />
+      
+      {/* <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 border-0 rounded-lg">
         {heroContent.map((item) => (
           <div key={item.title} className="lg:text-left lg:w-1/2">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -36,8 +39,8 @@ const Home = () => {
               ))}
             </div>
           </div>
-        ))}
-        <div className="mt-8 lg:mt-0 lg:w-1/2">
+        ))} */}
+        {/* <div className="mt-8 lg:mt-0 lg:w-1/2">
           <Image
             src="/building.png"
             alt="Buildings"
@@ -46,7 +49,7 @@ const Home = () => {
             className="w-fit max-h-screen"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

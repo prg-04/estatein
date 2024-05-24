@@ -95,19 +95,38 @@ export const heroContent = [
     cards: [
       {
         text: "Happy Customers",
-        number: "200+",
+        number: 200,
       },
       {
         text: "Properties For Clients",
-        number: "10k+",
+        number: 10,
       },
       {
         text: "Years of Experience",
-        number: "16+",
+        number: 16,
       },
     ],
   },
 ];
+
+export const heroGridContent = [
+  {
+    text: "Find your Dream Home",
+    icon: '/dream-home.svg'
+  },
+  {
+    text: "Unlock Property value",
+    icon: '/property-val.svg'
+  },
+  {
+    text: "Effortless Property Management",
+    icon: '/property-management.svg'
+  },
+  {
+    text: "Smart Investments, Informed Decisions",
+    icon: '/smart-investment.svg'
+  },
+]
 
 export const values = [
   {

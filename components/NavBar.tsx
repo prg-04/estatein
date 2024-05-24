@@ -17,7 +17,7 @@ const NavBar = () => {
     setisClick(false);
   };
   return (
-    <header className="flex justify-between items-center p-4">
+    <header className="flex justify-between items-center p-4 border-8 lg:px-20">
       <Link href="/">
         <div className="flex justify-between" onClick={closeMenu}>
           <Image src="/Symbol.svg" width={25} height={25} alt="Estatein logo" />
@@ -26,7 +26,8 @@ const NavBar = () => {
           </h2>
         </div>
       </Link>
-      <nav className="flex justify-between items-center gap-4 ">
+
+      <nav className="flex justify-between items-center gap-4  ">
         {navLinks.map((link) => (
           <div
             key={link.name}
@@ -41,6 +42,7 @@ const NavBar = () => {
           </div>
         ))}
       </nav>
+
       <Link href="/contact" className="hidden md:block">
         <Button
           variant="contained"
@@ -50,7 +52,8 @@ const NavBar = () => {
           Contact us
         </Button>
       </Link>
-      <div className="md:hidden flex items-center">
+
+      <div className="md:hidden flex items-center border-2">
         <button
           className="flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-inset focus:ring-white"
           onClick={toggle}
@@ -90,7 +93,7 @@ const NavBar = () => {
       </div>
 
       {isClick && (
-        <div className="absolute top-0 left-0 flex justify-center mt-11 items-center gap-0 bg-black w-full">
+        <div className="absolute top-0 left-0 flex justify-center mt-11 items-center gap-0 bg-black w-full border-4">
           <div className="flex flex-col">
             <nav className="flex-col gap-0 items-center">
               {navLinks.map((link) => (
@@ -120,6 +123,7 @@ const NavBar = () => {
           </div>
         </div>
       )}
+
     </header>
   );
 };
