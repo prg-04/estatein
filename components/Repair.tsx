@@ -22,7 +22,7 @@ const Repair = () => {
       <Link href="/" className="relative z-50">
         <div className="flex justify-between gap-2">
           <Image src="/Symbol.svg" alt="" width={30} height={30} />
-          <Typography variant="h1" className="text-2xl">
+          <Typography variant="h1" sx={{fontSize: "28px" }} className="">
             EstateIn
           </Typography>
         </div>

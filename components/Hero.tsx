@@ -23,7 +23,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Hero = () => {
-  //   const { cards } = heroContent;
   const isDesktop = useMediaQuery("(min-width:768px)");
 
   return (
